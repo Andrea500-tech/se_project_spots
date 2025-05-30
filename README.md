@@ -8,4 +8,6 @@ Spots is a responsive photo-sharing platform where users can upload, remove, and
 - **Responsive layouts with CSS Grid and media queries** – Ensures the site adapts seamlessly to all devices
 ## Deployment
 
-This webpage is deployed to [Github Pages](https://Andrea500-tech.github.io/se_project_spots).
+Watch the demo here: [Spots Demo Video](https://drive.google.com/file/d/1orKIlmFEM0HVPUq_G1jP3YIveJBedael/view?usp=drive_link).
+
+This webpage is deployed to [Github Pages](https://andrea500-tech.github.io/se_project_spots/).
