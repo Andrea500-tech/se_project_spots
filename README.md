@@ -1,21 +1,13 @@
-# Project 3: Spots
-
-### Overview  
-
-* Intro  
-* Figma  
-* Images  
+# Project 3: Spots  
+An image sharing site
+## description
+Spots is a responsive photo-sharing platform where users can upload, remove, and like photos, as well as personalize their profiles with minor adjustments. The site enables users to interact with each other's photos, fostering a simple and engaging community experience. Its standout feature is a seamless, mobile-friendly design that ensures a smooth experience across all devices.
+## Tech Stack
+- **HTML** – Structure and content of the web pages  
+- **CSS** – Styling and layout  
+- **Responsive layouts with CSS Grid and media queries** – Ensures the site adapts seamlessly to all devices
+## Deployment
   
-**Intro**
+This webpage  is deployed to Github pages
+ https://yourusername.github.io/repository-name
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
