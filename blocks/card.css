@@ -1,40 +1,44 @@
-.card{
-  height: 445px;
+.card__image {
+  width: 100%;
+  height: 413px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
 }
-.card__image{
-width:100%;
-height: 413px;
-object-fit:cover;
-display: block;
-}
-.card__content{
+.card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
 }
-.card__title{
+.card__title {
+  margin: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  height: 24px;
-  max-width: 342px; 
+  max-width: 342px;
 }
-.card__like-btn{
+.card__like-btn {
   background-image: url(../images/heart.svg);
   width: 23px;
   height: 20px;
   border: none;
   background-color: transparent;
   opacity: 0.4;
-
-
+  cursor: pointer;
 }
-@media screen and (max-width: 627px){
-  .card__image{
+.card__like-btn:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 627px) {
+  .card__title {
+    font-size: 16px;
+    max-width: 250px;
+  }
+  .card__image {
     height: 288px;
   }
-  
- }
+}
