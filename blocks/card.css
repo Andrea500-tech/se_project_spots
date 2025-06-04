@@ -20,6 +20,7 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 342px;
+  color: #212121;
 }
 .card__like-btn {
   background-image: url(../images/heart.svg);
@@ -37,8 +38,14 @@
   .card__title {
     font-size: 16px;
     max-width: 250px;
+    line-height: 1.0;
   }
   .card__image {
     height: 288px;
+  }
+}
+@media screen and (max-width: 320px){
+  .card__like-btn{
+    background:transparent url(../images/heart.svg)  no-repeat center/contain;
   }
 }
