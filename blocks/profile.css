@@ -95,13 +95,13 @@
     margin: 0 auto;
   }
   .profile__avatar {
-    margin: 0 0 20px;
+    margin: 0 0 12px;
     height: 80px;
     width: 80px;
   }
   .profile__name {
     font-size: 20px;
-    margin: 0;
+    margin: 0 0 6px;
     max-width: 288px;
   }
   .profile__description {
@@ -109,11 +109,10 @@
     max-width: 288px;
   }
   .profile__edit-btn {
-    margin: 0;
+    margin: 32px 0 0;
   }
   .profile__column {
     align-items: center;
-    gap: 20px;
   }
   .profile__add-btn {
     margin: 20px 0 0;
