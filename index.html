@@ -120,6 +120,74 @@
       <footer class="footer">
         <p class="footer__copyright">2023 © Spots</p>
       </footer>
+      <div class="modal modal__isopened">
+        <div class="modal__container">
+          <button class="modal__close-btn" type="button">
+            <img
+              src="./images/close-icon.svg"
+              alt="Close modal"
+              class="modal__close-icon"
+            />
+          </button>
+          <h2 class="modal__title">Edit Profile</h2>
+          <form class="modal__form">
+            <label class="modal__label" for="profile-name-input"
+              >Name<input
+                type="text"
+                id="profile-name-input"
+                class="modal__input"
+                placeholder="Type your name"
+                required
+              />
+            </label>
+            <label class="modal__label" for="profile-description-input"
+              >Description<input
+                type="text"
+                id="profile-description-input"
+                class="modal__input"
+                placeholder="Describe yourself"
+                required
+              />
+            </label>
+
+            <button class="modal__submit-btn" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal__isopened">
+        <div class="modal__container">
+          <button class="modal__close-btn" type="button">
+            <img
+              src="./images/close-icon.svg"
+              alt="Close modal"
+              class="modal__close-icon"
+            />
+          </button>
+          <h2 class="modal__title">New post</h2>
+          <form class="modal__form">
+            <label class="modal__label" for="card-image-input"
+              >Image link<input
+                type="url"
+                id="card-image-input"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+                required
+              />
+            </label>
+            <label class="modal__label" for="card-caption-input"
+              >Caption<input
+                type="text"
+                id="card-caption-input"
+                class="modal__input"
+                placeholder="Type your caption"
+                required
+              />
+            </label>
+
+            <button class="modal__submit-btn" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
