@@ -16,21 +16,29 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const imageLinkInput = newPostModal.querySelector("#card-image-input");
 const imageCaptionInput = newPostModal.querySelector("#card-caption-input");
+// Modal functionality
+function openModal(modal) {
+  modal.classList.add("modal__is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal__is-opened");
+}
 // Open and close the edit profile modal
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileDescription.textContent;
-  editProfileModal.classList.add("modal__isopened");
+  openModal(editProfileModal);
 });
 editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal__isopened");
+  closeModal(editProfileModal);
 });
 // Open and close the new post modal
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal__isopened");
+  openModal(newPostModal);
 });
 newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal__isopened");
+  closeModal(newPostModal);
 });
 // Handle the edit profile form submission
 
@@ -38,7 +46,8 @@ function handleEditProfileFormSubmit(event) {
   event.preventDefault();
   profileName.textContent = editProfileNameInput.value;
   profileDescription.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal__isopened");
+  closeModal(editProfileModal);
+  editProfileForm.reset();
 }
 editProfileForm.addEventListener("submit", handleEditProfileFormSubmit);
 // Handle the new post form submission
@@ -48,7 +57,8 @@ function handleNewPostFormSubmit(event) {
     imageLink: imageLinkInput.value,
     caption: imageCaptionInput.value,
   });
-  newPostModal.classList.remove("modal__isopened");
+  closeModal(newPostModal);
+  newPostForm.reset();
 }
 
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);
