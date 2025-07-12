@@ -8,6 +8,10 @@
   border-radius: 8px;
   object-fit: cover;
   display: block;
+
+}
+.card__image:hover {
+   cursor: pointer;
 }
 .card__delete-btn {
   width: 32px;
@@ -55,7 +59,7 @@
   opacity: 1;
 }
 .card__like-btn_active {
-  background-image: url(../images/like-active.svg);
+  background: url(../images/like-active.svg) no-repeat center/contain;
   opacity: 1;
 }
 .card__like-btn_active:hover {
@@ -72,8 +76,4 @@
     height: 288px;
   }
 }
-@media screen and (max-width: 320px) {
-  .card__like-btn {
-    background: transparent url(../images/heart.svg) no-repeat center/contain;
-  }
-}
+

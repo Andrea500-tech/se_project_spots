@@ -122,7 +122,6 @@ function getCardElement(data) {
   const cardDeleteBtn = cardElement.querySelector(".card__delete-btn");
   cardDeleteBtn.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
   cardImage.addEventListener("click", () => {
     previewImage.src = data.link;
