@@ -55,12 +55,31 @@ const previewImage = previewModal.querySelector(".modal__preview-image");
 const previewCaption = previewModal.querySelector(".modal__caption");
 
 // Modal functionality
+function handleOverlayClick(evt) {
+  if (evt.target.classList.contains("modal")) {
+    closeModal(evt.target);
+  }
+}
+
+function handleEscClose(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal__is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal__is-opened");
+  modal.addEventListener("mousedown", handleOverlayClick);
+  document.addEventListener("keydown", handleEscClose);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal__is-opened");
+  modal.removeEventListener("mousedown", handleOverlayClick);
+  document.removeEventListener("keydown", handleEscClose);
 }
 // Open and close the edit profile modal
 editProfileBtn.addEventListener("click", function () {

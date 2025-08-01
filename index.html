@@ -127,7 +127,10 @@
                 placeholder="Paste a link to the picture"
                 required
               />
-              <span id="card-image-input-error" class="modal__error"></span>
+              <span
+                id="card-image-input-error"
+                class="modal__error modal__error_visible"
+              ></span>
             </label>
             <label class="modal__label" for="card-caption-input"
               >Caption<input
@@ -139,7 +142,10 @@
                 minlength="2"
                 required
               />
-              <span id="card-caption-input-error" class="modal__error"></span>
+              <span
+                id="card-caption-input-error"
+                class="modal__error modal__error_visible"
+              ></span>
             </label>
 
             <button class="modal__button" type="submit">Save</button>
@@ -150,7 +156,7 @@
       <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
           <button
-            class="modal__close-btn .modal__close-btn_type_preview"
+            class="modal__close-btn modal__close-btn_type_preview"
             type="button"
           ></button>
           <img src="#" alt="" class="modal__preview-image" />
