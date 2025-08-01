@@ -47,6 +47,7 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostForm = newPostModal.querySelector(".modal__form");
 const imageLinkInput = newPostModal.querySelector("#card-image-input");
 const imageCaptionInput = newPostModal.querySelector("#card-caption-input");
+const buttonElement = newPostModal.querySelector(".modal__button");
 // Preview modal elements
 const previewModal = document.querySelector("#preview-modal");
 const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
@@ -66,6 +67,10 @@ editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileDescription.textContent;
   openModal(editProfileModal);
+  const modalInputs = Array.from(
+    editProfileForm.querySelectorAll(".modal__input")
+  );
+  resetValidation(editProfileForm, modalInputs, settings);
 });
 editProfileCloseBtn.addEventListener("click", function () {
   closeModal(editProfileModal);
